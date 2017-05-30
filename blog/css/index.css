@@ -1,0 +1,686 @@
+*{
+	margin:0;
+	padding:0;
+}
+a:hover{
+	text-decoration: none;
+}
+body{
+	width:100%;
+	font:16px/20px "微软雅黑",Arail;
+	color:#000;
+	background-color: rgb(222,231,222);
+}
+#nav{
+	background:url("http://www.cnblogs.com/skins/SimpleBlue/images/header.gif") repeat-x;
+}
+#myCarousel{
+	width:100%;
+	border:1px solid #000;
+	margin:10px 0;
+	height:250px;
+}
+a#navbar-brand{
+	font-size: 24px;
+	color:#000;
+}
+#header-p{
+	clear:both;
+	font-size: 15px;
+	color:#000;
+	text-indent:40px;
+}
+#navbar-collapse{
+	padding-top:10px;
+}
+#content{
+	width:100%;
+	margin-top:5px;
+	padding:10px;
+	height:100%;
+}
+#content .left{
+	width:310px;
+	/*box-shadow: 2px 2px 2px #eee;
+	border:1px solid #ccc;*/
+	font-size: 15px;
+	float:left;
+}
+#content .right{
+	width:76%;
+	padding:10px 20px;
+	font-size:16px;
+	float:right;
+}
+.clear{
+	clear:both;
+}
+.footer{
+	margin-top:100px ;
+	width:98%;
+	margin-left:1%;
+	text-align: center;
+	font-size: 11px;
+	color:#525252;
+	border-top:1px solid #ccc;
+	padding:5px 0;
+}
+/*日历样式*/
+.calendar{
+	display: block;
+}
+.calendar .calendar-title-box{
+	position: relative;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	text-align:center;
+	border-bottom: 1px solid #ddd;
+}
+/*上个月的按钮*/
+.calendar .prev-month{
+	position:absolute;
+	top:12px;
+	left:0px;
+	display: inline-block;
+	width:0;
+	height:0;
+	border-left:0px;
+	border-top:6px solid transparent;
+	border-right:8px solid #999;
+	border-bottom:6px solid transparent;
+	cursor:pointer;
+}
+.calendar .next-month{
+	position:absolute;
+	top:12px;
+	right:0px;
+	display: inline-block;
+	width:0;
+	height:0;
+	border-left:8px solid #999;
+	border-top:6px solid transparent;
+	border-right:0;
+	border-bottom:6px solid transparent;
+	cursor:pointer;
+}
+/*设置日历表格样式*/
+.calendar-table{
+	width:100%;
+	border-collapse: collapse;
+	text-align: center;
+}
+.calendar-table th{
+	text-align: center;
+}
+.calendar-table tr{
+	height:30px;
+	line-height:30px;
+}
+.currentDay{
+	color:red;
+}
+.currentMonth{
+	color:#999;
+}
+.otherMonth{
+	color:#ede;
+}
+label.search a{
+	font-size: 13px;
+	font-weight: 400;
+	color:#000;
+	display: inline-block;
+	width:80%;
+	height:30px;
+	line-height:30px;
+	border:1px solid #ccc;
+	text-align:center;
+	background-color: rgb(221,221,221);
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	-ms-border-radius:5px;
+}
+.panel-heading{
+	font-size: 16px;
+}
+#my-panel-body{
+	width:96%;
+	margin:0 2%;
+}
+.page-header a{
+	font-size: 16px;
+	color:green;
+}
+.col{
+	position: relative;
+}
+.col p{
+	font-size: 14px;
+}
+.col p a{
+	color:#000;
+	font-size:16px;
+	text-decoration: underline;
+}
+.col p.note{
+	float:right;
+}
+.col p.note a{
+		font-size:12px;
+		display:inline-block; 
+		margin-right:8px;
+		text-decoration: none;
+}
+
+
+/*相册样式*/
+img{
+	border:0;
+}
+.wrapper{
+	width:94%;
+	margin:0 auto;
+}
+#con1_1{
+	position: relative;
+}
+#con1_1 .product_list{
+	position: absolute;
+	left:0;
+	top:0;
+	padding:10px;
+	background:#eee;
+	margin:5px;
+}
+#con1_1 .product_list img{
+	position: relative;
+}
+#con1_1 .product_list span{
+	position: absolute;
+	right:15px;
+	top:15px;
+	color:#ccc;
+	display: none;
+}
+.product_list img{
+	width:200px;
+}
+.picture_post{
+	width:94%;
+	padding-left:3%;
+	margin:5px auto;
+	padding-bottom: 10px;
+	height:10%;
+	border-bottom:1px dashed #ccc;
+}
+/*about*/
+#about_container{
+	width:80%;
+	margin:0 auto;
+	background-color: #fff;
+	height:800px;
+}
+
+#about_container p{
+	padding:10px 0;
+}
+#about_container .geyan{
+	width:100%;
+	background:url("http://fanjianghua.com/index/images/title-bott.png") repeat-x 0 bottom;
+	padding:50px 10px 15px 20px;
+}
+.geyan p{
+	font-size: 11px;
+	font-family: "微软雅黑",Arail;
+	color:grey;
+	border-top:4px solid #eee;
+	padding:5px 0;
+}
+.user{
+	padding-right:5px;
+}
+#about_container .about_main{
+	width:100%;
+	margin-top:20px;
+	padding:10px;
+}
+.about_left{
+	width:74%;
+	float:left;
+	font-size: 14px;
+	color: grey;
+}
+.life{
+	margin-top:25px;
+}
+.live_me{
+	margin:30px 0 40px 0;
+}
+.about_left h4{
+	font-size:16px;
+	color:#000;
+}
+.live_me h5{
+	font-size: 13px;
+	color:#000;
+}
+ 
+.about_left .life p.chat{
+	border-top:1px solid #eee;
+	border-bottom:1px solid #eee;
+}
+.about_right{
+ 
+	width:24%;
+	float:right;
+}
+ul{
+	list-style:none;
+}
+.myBody li{
+	font-size: 13px;
+	margin-bottom:5px;
+}
+/*结束*/
+
+.page-body .code{
+	margin-top:40px;
+} 
+.myPageBody p{
+	padding:5px 0;
+}
+.green_channel{
+	border:1px dashed #ccc;
+	width:300px;
+	padding:20px 20px;
+	font-size: 14px;
+}
+.green_channel a{
+	color:#fff;
+}
+.green_channel #green_channel_digg{
+	border:1px solid rgb(60,151,178);
+	background-color: rgb(60,151,178);
+	border-radius:10px;
+	width:10%;
+	text-align: center;
+	padding:10px 1px;
+	margin-right: 15px;
+}
+.green_channel #green_channel_follow{
+	border:1px solid rgb(219,81,43);
+	background-color: rgb(219,81,43);
+	border-radius:10px;
+	width:10%;
+	text-align: center;
+	padding:10px 10px;
+	margin-right: 15px;
+}
+.green_channel #green_channel_favorite{
+	border:1px solid rgb(241,183,49);
+	background-color: rgb(241,183,49);
+	border-radius:10px;
+	width:10%;
+	text-align: center;
+	padding:10px 10px;
+}
+.myLink{
+	margin:30px 0;
+	font-size: 12px;
+}
+.myLink a{
+	color:grey;
+}
+.myLink a:hover{
+	color:#000;
+}
+.mynote{
+	float:right;
+	font-size: 12px;
+}
+.mynote a{
+	margin-right:10px;
+	color:blue;
+}
+.mynote a.hide_p{
+	color:grey;
+}
+.comment{
+	padding:30px 0;
+	clear:both;
+}
+.comment h4{
+	font-size:16px;
+	color:#000;
+	border-bottom:1px solid #ccc;
+	padding-bottom:10px;
+}
+.comment ul li{
+	border-bottom:1px solid #ccc;
+	padding:10px 0;
+	font-size: 13px;
+	color:grey;
+	position: relative;
+}
+.comment ul li a{
+	color:blue;
+}
+.comment ul li .mod_del{
+	position: absolute;
+	right:2%;
+	top:20%;
+}
+.comment ul li .mod_del a{
+	font-size: 12px;
+	color:blue;
+}
+.comment p.page_bot{
+	float:right;
+	font-size: 13px;
+}
+.comment p.page_bot a{
+	margin-right:15px;
+	color:blue;
+}
+#comment_form_container{
+	margin-top:20px;
+}
+#comment_form_container div,#comment_form_container p{
+	font-size: 14px;
+	color:#000;
+}
+#commentform_title{
+	margin-bottom: 10px;
+}
+#tbCommentBody{
+	width:450px;
+	height:300px;
+}
+#commentbox_opt{
+	margin-top:15px;
+}
+#btn_comment_submit{
+	padding:3px 25px;
+	margin-right:10px;
+}
+#span_comment_canceledit{
+	margin-right: 10px;
+}
+
+
+/*留言板*/
+.comment-area .index-title{
+	font-size: 14px;
+	color:#0181da;
+}
+.comment-area .index-title span{
+	color:#000;
+}
+.comment-area .index-title span{
+	padding:0 5px;
+}
+.comment-area .index-title span.glyphicon{
+	color:orange;
+}
+.comment-area a{
+	float:right;
+	font-size: 14px;
+	color:#0181da;
+}
+
+.right .comment-area h1,.right .comment-area h2,.right .comment-area h3,.right .comment-area h4,.right .comment-area h5 {
+    padding: 15px 0;
+    margin: 0;
+    text-indent: 5px;
+    background: rgba(255,255,255,0.5);
+    margin-bottom: 15px;
+}
+.feedback-comment .bg-color{
+	padding: 20px 15px 80px 15px;
+	background: rgba(255,255,255,0.5);
+    margin-bottom: 15px;
+    display: inline-block;
+    width:100%;
+}
+.feedback-comment .bg-color span.louceng{
+	position: absolute;
+	right:10px;
+	top:5px;
+	font-size: 12px;
+	color:grey;
+}
+.feedback-comment .bg-color .comment-ava{
+	float:left;
+	width:50px;
+	height:50px;
+	padding-right: 10px;
+}
+.feedback-comment .bg-color .comment-info{
+	float:left;
+	width:88%;
+	padding:10px 0px;
+}
+.bg-color .comment-line ul{
+	text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width:80%;
+}
+
+.comment-line ul li:first-child {
+    margin-left: 0;
+}
+.comment-line ul li {
+    float:left;
+    margin: 0 10px;
+    font-size: 12px;
+    color: #0181da;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.comment-content{
+	clear:both;
+	margin: 5px 0;
+	padding:5px 0 25px 0;
+	border-bottom:1px solid #ccc;
+	font-size: 15px;
+}
+.comment-line ul li span{
+	padding:0 5px;
+	color:orange;
+} 
+.re-comment{
+	/*border:1px solid #000;*/
+	width:88%;
+	height:20px;
+	font-size: 14px;
+	clear:both;
+	margin-top:20px;
+}
+
+.right h3.blue-text{
+	display: block;
+	clear:both;
+	height:45px;
+}
+.right h3.blue-text a{
+	float:left;
+	font-size: 18px;
+	padding-bottom:10px;
+}
+.blue-text a span{
+	padding-right:5px;
+	color:orange;
+}
+#Coon{
+	margin-top: 10px;
+}
+.hdmenu{
+	width:100%;
+}
+.hdmenu li{
+	float:left;
+	margin-right:15px;
+	font-size: 12px;
+	color:grey;
+}
+.hdmenu li span{
+	color:orange;
+	padding-right:5px;
+	font-size:14px;
+}
+.hdmenu li input{
+	margin-right: 5px;
+}
+.input-prepend{
+	clear:both;
+	margin:15px 0;
+}
+.input-prepend input{
+	height:35px;
+	width:290px;
+	border:1px solid #ccc;
+	margin-left: 35px;
+	font-size: 14px;
+	padding-left: 10px;
+	opacity:0.8;
+	filter:opacity(80);
+}
+.face-box textarea{
+	width:550px;
+	height:200px;
+	opacity:0.8;
+	filter:opacity(80);
+}
+.yzm span img{
+	width:10%;
+	height:30px;
+}
+.feed-sub{
+	width:150px;
+	height:55px;
+	padding:10px 0;
+}
+.feed-sub input{
+	color:#ff6700;
+	background-color: #fff;
+	width:100%;
+	height:100%;
+	cursor: pointer;
+}
+#Coon div{
+	position: relative;
+}
+#Coon div span.glyphicon{
+	display: inline-block;
+	width:35px;
+	height:33px;
+	line-height: 33px;
+	text-align: center;
+	background-color: #fff;
+	position: absolute;
+	color:orange;
+}
+
+
+
+/*文章页面*/
+article{
+	width:100%;
+	overflow:hidden;
+}
+ul{
+	padding:0;
+	margin:0;
+}  
+.shuo-area article >ul>li {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+.shuo-ava {
+    float: left;
+    max-width: 50px;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+}
+.shuo-ava img{
+	width:100%;
+}
+.shuo-ava span {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+} 
+.shuo-info {
+    float: left;
+    max-width: 86%;
+    position: relative;
+    margin-left: 25px;
+    padding: 10px 0px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    background: rgba(255,255,255,0.8);
+}
+.shuo-content {
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+}
+.pc-hidden {
+    display: none;
+}
+.shuo-line ul {
+    text-align: left;
+    margin-left: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-top: 1px dotted #ddd;
+    box-sizing: border-box;
+}
+.shuo-line ul li:first-child {
+    margin-left: 0;
+}
+.shuo-line ul li span{
+	color:#ff6700;
+	padding-right:3px;
+	padding-top:3px;
+}
+
+/*翻页导航*/
+.page {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 12px;
+    overflow: hidden;
+}
+.page .first, .page .prev, .page .current, .page .num, .page .current, .page .next, .page .end {
+    padding: 8px 16px;
+    margin: 0px 5px;
+    display: inline-block;
+    color: #008CBA;
+    /* border: 1px solid #F2F2F2; */
+    border-radius: 5px;
+}
+.page .not-allowed {
+    cursor: not-allowed;
+}
+.page .current {
+    background-color: #008CBA;
+    color: #FFF;
+    border-radius: 5px;
+    border: 1px solid #008CBA;
+}
+.page span {
+    color: #008CBA;
+}
