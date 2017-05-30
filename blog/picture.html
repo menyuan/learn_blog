@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>相册</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link type="text/css" href="css/index.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="nav navbar-default" id="nav" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+	      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+	       			 <span class="sr-only"></span>
+	        		 <span class="icon-bar"></span>
+	        		 <span class="icon-bar"></span>
+	        		 <span class="icon-bar"></span>
+	      			</button>
+	      			<a class="navbar-brand" href="index.html" id="navbar-brand">门小远</a>
+	      			<p id="header-p">你站在桥上看风景，看风景的人在楼上看你。</p>
+	    		</div>
+				<div class="collapse navbar-collapse navbar-right" id="navbar-collapse">
+					<ul class="nav navbar-nav" id="nav-List">
+						<li class="active"><a href="index.html" target="_self">首页</a></li>
+						<li><a href="para.html" target="_self">文章</a></li>
+						<li><a href="message.html" target="_self">留言板</a></li>
+						<li><a href="picture.html" target="_self">相册</a></li>
+						<li><a href="about.html" target="_self">关于我</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<div class="picture_post">
+				<input type="file" name="thumbnail" id="thumbnail" />
+			</div>
+			<div id="con1_1">
+				<div class="product_list"><img src="img/1.jpg" /><span class="glyphicon glyphicon-remove-circle"></span></div>
+				<div class="product_list"><img src="img/2.jpg" /><span class="glyphicon glyphicon-remove-circle"></span></div>
+				<div class="product_list"><img src="img/3.jpg" /><span class="glyphicon glyphicon-remove-circle"></span></div>
+				<div class="product_list"><img src="img/4.jpg" /><span class="glyphicon glyphicon-remove-circle"></span></div>
+				<div class="product_list"><img src="img/5.jpg" /><span class="glyphicon glyphicon-remove-circle"></span></div>
+				<div class="product_list"><img src="img/6.jpg" /><span class="glyphicon glyphicon-remove-circle"></span></div>
+				<div class="product_list"><img src="img/7.jpg" /><span class="glyphicon glyphicon-remove-circle"></span></div>
+				<div class="product_list"><img src="img/8.jpg" /><span class="glyphicon glyphicon-remove-circle"></span></div>
+				<div class="product_list"><img src="img/9.jpg" /><span class="glyphicon glyphicon-remove-circle"></span></div>
+				<div class="product_list"><img src="img/10.jpg" /><span class="glyphicon glyphicon-remove-circle"></span></div>
+				<div class="product_list"><img src="img/11.jpg" /><span class="glyphicon glyphicon-remove-circle"></span></div>
+			</div>
+		</div>
+		<div class="footer" style="position: fixed;bottom:0">
+				<p>CopyRight&nbsp;&copy;&nbsp;2017<span>门小远博客</span><span>Design by Yuan</span></p>
+			</div>
+		<script type="text/javascript" src="js/picture.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript">
+		$(function(){
+			$("#nav-List li").removeClass("active");
+			$("#nav-List li").eq(3).addClass("active");
+			window.onresize=function(){
+				liuxiaofan();
+			}
+		})
+	</script>
+</body>
+</html>
